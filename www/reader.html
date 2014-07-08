@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Reader</title>
+	<link rel="stylesheet" media="all" href="han/han.css">
+	<!--link href="sematic/css/semantic.min.css" rel="stylesheet"-->
+	<link href="sematic/css/semantic.modified.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reader.css">
+</head>
+
+<body>
+
+	<div class="ui menu fixed inverted" id="topmenu">
+		<div class="item link" id="toggle-sidebar">
+			<iconi class="icon double angle left" id="toggle-sidebar"></iconi>
+		</div>
+		<div class="item link">THE READER</div>
+		<a class="item" id="link-retriver" href="login.html">Retriver <iconi class="right icon"></iconi></a>
+		<div class="right menu">
+			<div class="item">
+				by Chazeon
+			</div>
+						<a href="index.html" style="text-decoration: none;" class="item"><span style="color: #FFFFFF">Renren Share Retriver</span>
+			<iconi class="icon renren large" style="color:#FFFFFF; opacity:1;"></iconi></a>
+		</div>
+	</div>
+
+	<div class="ui left sidebar vertical wide floating">
+		<div class="ui menu vertical fluid" id="vertical-nav">
+			<div class="header item" id="menu-titlebar">
+				Menu
+			</div>
+
+			<a class="item" id="sort-menu" data-content='<div class="ui menu vertical secondary">
+					<a class="item sort-select" id="sort-date" onclick="view.load_sort_date.call(view)">
+						<iconi class="icon sort order ascending"></iconi>Date 
+					</a>
+					<a class="item sort-select" id="sort-date-rev" onclick="view.load_sort_date_reversed.call(view)">
+						<iconi class="icon sort order descending"></iconi>Date Reversed
+					</a>
+				</div>' data-position="right center">
+				<iconi class="sort icon"></iconi>
+				Sort by: <span id="sort-mode">Date Reversed</span> 
+			</a>
+		</div>
+
+		<div class="ui menu secondary vertical fluid pointing" id="postlist">
+
+		</div>
+		<div class="ui menu labeled icon fluid" id="section-menu">
+
+			<a class="item section-select" id="sec-share"> <iconi class="share sign icon"></iconi> Share </a>
+
+			<a class="item section-select" id="sec-collection"> <iconi class="star icon"></iconi> Collection </a> </a>
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="title">
+			<h1 id="bigtitle"></h1>
+		</div>
+		<div id="post-information">
+		</div>
+		<div id="article">
+		</div>
+	</div>
+
+</body>
+<script src="jquery/jquery-2.1.1.min.js"></script>
+<script src="sematic/javascript/semantic.min.js"></script>
+<script src="han/js/han.js"></script>
+<script src="js/reader.js"></script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Login</title>
+	<link href="sematic/css/semantic.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url('bg.jpg'); background-repeat:no-repeat; background-size: 100%">
+
+	<!--div class="ui grid middle aligned three column"-->
+	<div style="max-width: 400px; margin: 0 auto;">
+		<div align="right" style="margin-top:40px; margin-bottom:20px">
+		<a href="index.html" style="text-decoration: none;"><span style="color: #FFFFFF">Renren Share Retriver</span>
+			<i class="icon renren large" style="color:#FFFFFF; opacity:1;"></i></a>
+		</div>
+		<div class="ui vertical column">
+			<div class="ui form segment error">
+				<div class="field" id="username">
+					<label>Username</label>
+					<div class="ui left labeled icon input">
+						<input type="text" placeholder="Username" id="username">
+						<i class="user icon"></i>
+					</div>
+				</div>
+				<div class="field" id="password">
+					<label>Password</label>
+					<div class="ui left labeled icon input">
+						<input type="password" id="password">
+						<i class="lock icon"></i>
+					</div>
+				</div>
+				<div class="field" id="icode">
+					<label>Verify</label>
+					<div class="ui left labeled icon input">
+						<input type="text" placeholder="Verify" id="icode" style="width: 65%">
+						<i class="unhide icon"></i>
+						<img class ="rounded" src='/verify' id='icode' style="height: 41px; position: absolute; margin-left: 20px;" id="icode">
+					</div>
+				</div>
+				<!--div class="ui error message">
+					<div class="header">We noticed some issues</div>
+				</div-->
+				<div class="ui blue submit button fluid" id="login">Login</div>
+				<!--div class="field" style="text-align:center; margin-top:20px"-->
+			</div>
+			<div style="text-align: right;">
+			<a href="reader.html" style="color: #ffffff; opacity: 1; text-decoration: none; "> Reader<i class="right icon"></i></a>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="jquery/jquery-2.1.1.min.js"></script>
+<script src="sematic/javascript/semantic.min.js"></script>
+<script src="js/login.js">
+</script>
+</html>

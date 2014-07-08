@@ -1,0 +1,67 @@
+body {
+	background-color: rgb(248, 248, 245);
+}
+
+div.menu#topmenu {
+	top: 0px;
+}
+
+
+div.menu#postlist {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+div.postitem.active {
+	border-left: 4px solid !important;
+	font-weight: bold;
+}
+
+div#main {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px
+}
+
+h1#bigtitle {
+	padding: 0px;
+	text-align:center; 
+}
+
+div#article {
+	padding: 20px;
+}
+
+span#sort-mode {
+	font-weight: bold;
+}
+
+a#sort-menu {
+	text-align: right;
+}
+
+div#section-menu {
+	background-color: #ffffff;
+}
+
+div.sidebar {
+	overflow-x: hidden;
+}
+
+div#menu-titlebar {
+	text-align: right;
+}
+
+a.section-select {
+	width: 50%;
+}
+
+div#post-information {
+	text-align: center;
+	color: #aaaaaa;
+}
+
+a#link-retriver {
+	color: #aaaaaa;
+}

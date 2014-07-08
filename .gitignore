@@ -1,0 +1,11 @@
+# Temp Files
+*~
+*.swp
+
+# Python Temp
+__pycache__
+.pyc
+
+# Program Generated Files
+www/index/
+www/blog-json/
